@@ -1,6 +1,6 @@
 package com.company.excercise;
 
-import com.company.singleton.World;
+import com.company.excercise.singleton.ClassicWorld;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

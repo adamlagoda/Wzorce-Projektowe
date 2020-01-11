@@ -1,4 +1,4 @@
-package com.company.proxy;
+package com.company.factorymethod;
 
 import com.company.factorymethod.Dialog;
 import com.company.factorymethod.HTMLDialog;

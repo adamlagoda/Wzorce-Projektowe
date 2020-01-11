@@ -1,4 +1,4 @@
-package com.company.excercise;
+package com.company.excercise.singleton;
 
 public class ClassicWorld {
 
