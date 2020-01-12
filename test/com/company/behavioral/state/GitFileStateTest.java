@@ -8,13 +8,13 @@ public class GitFileStateTest {
     @Test
     public void whenFileCreatedThenStateUntracked() {
         GitFile file = new GitFile();
-        Assert.assertEquals("Untracked", file.getStatusMessage());
+        Assert.assertEquals("Untracked", file.status());
     }
 
     @Test
     public void whenFileAddedThenStateStaged() {
         GitFile file = new GitFile();
-        file.addFile();
-        Assert.assertEquals("Staged", file.getStatusMessage());
+        file.add();
+        Assert.assertEquals("Staged", file.status());
     }
 }

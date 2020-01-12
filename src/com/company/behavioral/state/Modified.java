@@ -1,6 +1,6 @@
 package com.company.behavioral.state;
 
-public class Modified extends State {
+public class Modified extends AbstractState {
 
     public Modified(GitFile file) {
         super(file);

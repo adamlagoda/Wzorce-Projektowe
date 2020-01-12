@@ -1,12 +1,7 @@
 package com.company.behavioral.state;
 
-public abstract class State {
-    protected GitFile file;
+public interface State {
 
-    public State(GitFile file) {
-        this.file = file;
-    }
-
-    public abstract void add();
-    public abstract String status();
+    void add();
+    String status();
 }

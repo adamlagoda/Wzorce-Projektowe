@@ -1,6 +1,6 @@
 package com.company.behavioral.state;
 
-public class Staged extends State {
+public class Staged extends AbstractState {
 
     public Staged(GitFile file) {
         super(file);

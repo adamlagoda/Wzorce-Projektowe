@@ -1,6 +1,6 @@
 package com.company.behavioral.state;
 
-public class Untracked extends State {
+public class Untracked extends AbstractState {
 
     public Untracked(GitFile file) {
         super(file);

@@ -1,22 +1,24 @@
 package com.company.behavioral.state;
 
-public class GitFile {
+public class GitFile implements State {
 
-    private State state;
+    private AbstractState state;
 
     public GitFile() {
         this.state = new Untracked(this);
     }
 
-    public void changeState(State state) {
+    public void changeState(AbstractState state) {
         this.state = state;
     }
 
-    public String getStatusMessage() {
-        return state.status();
+    @Override
+    public void add() {
+        state.add();
     }
 
-    public void addFile() {
-        state.add();
+    @Override
+    public String status() {
+        return state.status();
     }
 }
