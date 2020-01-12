@@ -11,6 +11,7 @@ public class ObserverTest {
         PCLNewsChannel observer = new PCLNewsChannel();
 
         observable.addPropertyChangeListener(observer);
+        Assert.assertNull(observer.getNews());
         observable.setNews("news");
 
         Assert.assertEquals(observer.getNews(), "news");
